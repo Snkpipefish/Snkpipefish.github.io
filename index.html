@@ -53,8 +53,9 @@
     font-size: clamp(2.2rem, 5vw, 3.2rem); margin: 0 0 8px; letter-spacing: -0.02em;
     background: linear-gradient(90deg, #fff 0%, #cfe9ff 45%, #ffe9a6 100%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 2px 10px rgba(0,0,0,.7));
   }
-  header p { margin: 0; color: var(--muted); }
+  header p { margin: 0; color: #b4bccb; text-shadow: 0 1px 10px rgba(0,0,0,.85), 0 0 2px rgba(0,0,0,.9); }
   header a { color: #cfe9ff; text-decoration: none; border-bottom: 1px solid rgba(207,233,255,.35); }
   header a:hover { border-bottom-color: #cfe9ff; }
   h2 {
@@ -277,11 +278,11 @@
   let W, H, dpr, t = 0, mx = 0, my = 0, tx = 0, ty = 0, stars = [];
 
   const RIBBONS = [
-    { hue: 158, sat: 85, y: .30, amp: .10, freq: 1.4, speed: .16, width: .20, alpha: .85, phase: 0, d: .6 },
-    { hue: 190, sat: 90, y: .36, amp: .08, freq: 2.1, speed: -.11, width: .15, alpha: .70, phase: 2, d: .8 },
-    { hue: 255, sat: 85, y: .24, amp: .12, freq: 1.0, speed: .08, width: .24, alpha: .60, phase: 4, d: .4 },
-    { hue: 300, sat: 70, y: .42, amp: .06, freq: 2.8, speed: .21, width: .10, alpha: .45, phase: 1, d: 1.0 },
-    { hue:  45, sat: 90, y: .20, amp: .05, freq: 3.4, speed: -.06, width: .08, alpha: .35, phase: 3, d: .3 },
+    { hue: 158, sat: 85, y: .30, amp: .10, freq: 1.4, speed: .16, width: .20, alpha: .50, phase: 0, d: .6 },
+    { hue: 190, sat: 90, y: .36, amp: .08, freq: 2.1, speed: -.11, width: .15, alpha: .40, phase: 2, d: .8 },
+    { hue: 255, sat: 85, y: .24, amp: .12, freq: 1.0, speed: .08, width: .24, alpha: .34, phase: 4, d: .4 },
+    { hue: 300, sat: 70, y: .42, amp: .06, freq: 2.8, speed: .21, width: .10, alpha: .24, phase: 1, d: 1.0 },
+    { hue:  45, sat: 90, y: .20, amp: .05, freq: 3.4, speed: -.06, width: .08, alpha: .18, phase: 3, d: .3 },
   ];
 
   function resize() {
